@@ -8,6 +8,20 @@ function closeNav() {
   $(document.body).css('background-color', 'white');
 }
 
+$(document).ready(function () {
+  $('#first-option').hover(
+    function () {
+      $('#second-nav').width('200px');
+    },
+    function () {
+      $('#second-nav').width('0px');
+    });
 
-
-
+  $('#second-nav').hover(
+    function () {
+      $('#second-nav').width('200px');
+    },
+    function () {
+      $('#second-nav').width('0px');
+    });
+});

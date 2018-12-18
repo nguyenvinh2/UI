@@ -1,7 +1,6 @@
 ﻿body {
 }
 
-
 #open-button {
   height: 10vh;
 }
@@ -17,6 +16,9 @@
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 30px;
+}
+#second-nav {
+  margin-left: 200px;
 }
 
   .sidenav a {
@@ -40,4 +42,3 @@
     font-size: 36px;
     margin-left: 50px;
   }
-
