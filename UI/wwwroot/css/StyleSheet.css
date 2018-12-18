@@ -1,0 +1,43 @@
+﻿body {
+}
+
+
+#open-button {
+  height: 10vh;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: aqua;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+}
+
+  .sidenav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+
+    .sidenav .closebtn:hover, a:hover, #open-button:hover {
+      color: ghostwhite;
+      cursor: pointer;
+    }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+

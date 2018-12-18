@@ -1,7 +1,17 @@
 ﻿
 @{
-    ViewData["Title"] = "Index";
+  ViewData["Title"] = "Index";
+
 }
+
+@await Html.PartialAsync("Navigation")
 
 <h2>Index</h2>
 
+<div id="side-nav" class="sidenav">
+  <span class="closebtn" onclick="closeNav()">&times;</span>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
