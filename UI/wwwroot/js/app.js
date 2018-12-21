@@ -24,4 +24,19 @@ $(document).ready(function () {
     function () {
       $('#second-nav').width('0px');
     });
-});
+
+  $('.button').click(
+    function () {
+      $('.modal').css('display', 'block');
+    });
+  $('.close').click(
+    function () {
+      $('.modal').css('display', 'none');
+      console.log('What\'s Up?');
+    });
+  window.onclick = function (event) {
+    if (event.target === $('.modal')) {
+      $('.modal').css('display', 'none');
+    }
+  };
+}); 
