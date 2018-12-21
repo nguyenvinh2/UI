@@ -42,3 +42,35 @@
     font-size: 36px;
     margin-left: 50px;
   }
+
+.container {
+  width: 35%;
+  z-index: 0;
+}
+
+.modal-container {
+  padding: 10px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+  /*-------------------------------------------------------------------------------------------*/
+
+.button {
+  text-align: center;
+  background-color: deepskyblue;
+  color: white;
+  padding: 14px 20px;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
