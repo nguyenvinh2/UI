@@ -3,3 +3,13 @@
 }
 
 <img id ="open-button" src="~/assets/img_open.png" onclick="openNav()"/>
+
+<section class="navigation">
+  <div id="side-nav" class="sidenav">
+    <span class="closebtn" onclick="closeNav()">&times;</span>
+    <a href="#" id="first-option">UI List</a>
+  </div>
+  <div id="second-nav" class="sidenav">
+    <a asp-action="Modal" asp-controller="Home">Modal Box</a>
+  </div>
+</section>

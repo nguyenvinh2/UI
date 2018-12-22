@@ -13,5 +13,11 @@ namespace UI.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public IActionResult Modal()
+        {
+            return View();
+        }
     }
 }

@@ -1,0 +1,19 @@
+﻿
+@{
+  ViewData["Title"] = "Modal";
+
+}
+
+@await Html.PartialAsync("Navigation")
+
+<h2>Modal</h2>
+<section class="container">
+  <div id="modal-container" class="modal">
+    <div class="modal-contents">
+      <span class="close">&times;</span>
+      <p>This modal contains a cool picture of an aircraft</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/A-10_-_32156159151.jpg" height="300" />
+    </div>
+  </div>
+  <button class="button">Click Me</button>
+</section>
