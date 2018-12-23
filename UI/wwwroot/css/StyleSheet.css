@@ -43,19 +43,7 @@
     margin-left: 50px;
   }
 
-.container {
-  width: 35%;
-  z-index: 0;
-}
-
 .modal {
-  padding: 10px;
-  padding-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  align-content: center;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -66,6 +54,11 @@
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+  text-align: center;
+  background-color: lightblue;
 }
 
 
@@ -76,12 +69,11 @@
   background-color: deepskyblue;
   color: white;
   padding: 14px 20px;
-  margin-top: 8px;
   margin-left: auto;
   margin-right: auto;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 15%;
 }
 
 .close {
@@ -97,10 +89,19 @@
     cursor: pointer;
   }
 
-/* Modal Content/Box */
 .modal-contents {
+  margin: 50px auto;
+  padding-top: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 10px;
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.inventory-slide img {
+  vertical-align: middle;
+  width: 100%;
+  max-height: 450px;
 }
