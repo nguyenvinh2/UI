@@ -9,6 +9,8 @@ function closeNav() {
 }
 
 $(document).ready(function () {
+  let modal = document.getElementById('modal-container');
+
   $('#first-option').hover(
     function () {
       $('#second-nav').width('200px');
@@ -32,6 +34,10 @@ $(document).ready(function () {
   $('.close').click(
     function () {
       $('.modal').css('display', 'none');
-      console.log('What\'s Up?');
     });
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
 }); 
