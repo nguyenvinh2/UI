@@ -6,10 +6,20 @@
 
 @await Html.PartialAsync("Navigation")
 
-<section id="mobile-container">
+<section class="mobile-container">
   <div class="inner-mobile-container" onclick="cross(this)">
     <div class="bar1"></div>
     <div class="bar2"></div>
     <div class="bar3"></div>
+  </div>
+
+  <div class="hidden-mobile-contents hidden-figure">
+    <h5 id="expand">Section</h5>
+    <div class="nested-hidden-contents">
+      <p>News</p>
+      <p>Opinion</p>
+      <p>Sports</p>
+      <p>Entertainment</p>
+    </div>
   </div>
 </section>

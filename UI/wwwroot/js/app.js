@@ -10,6 +10,8 @@ function closeNav() {
 
 function cross(bar) {
   bar.classList.toggle("change");
+  $('.hidden-mobile-contents').toggleClass('hidden-figure');
+  $('.nested-hidden-contents').css('display', 'hidden');
 }
 
 $(document).ready(function () {
@@ -44,4 +46,9 @@ $(document).ready(function () {
       modal.style.display = 'none';
     }
   });
+  $('#expand').click(
+    function () {
+      $(".nested-hidden-contents").toggle()
+    });
+
 }); 
