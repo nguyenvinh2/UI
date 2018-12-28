@@ -8,6 +8,10 @@ function closeNav() {
   $(document.body).css('background-color', 'white');
 }
 
+function cross(bar) {
+  bar.classList.toggle("change");
+}
+
 $(document).ready(function () {
   let modal = document.getElementById('modal-container');
 
