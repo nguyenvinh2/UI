@@ -8,6 +8,12 @@ function closeNav() {
   $(document.body).css('background-color', 'white');
 }
 
+function cross(bar) {
+  bar.classList.toggle("change");
+  $('.hidden-mobile-contents').toggleClass('hidden-figure');
+  $('.nested-hidden-contents').css('display', 'hidden');
+}
+
 $(document).ready(function () {
   let modal = document.getElementById('modal-container');
 
@@ -40,4 +46,9 @@ $(document).ready(function () {
       modal.style.display = 'none';
     }
   });
+  $('#expand').click(
+    function () {
+      $(".nested-hidden-contents").toggle()
+    });
+
 }); 

@@ -19,5 +19,11 @@ namespace UI.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public IActionResult MobileMenu()
+        {
+            return View();
+        }
     }
 }
