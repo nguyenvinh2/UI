@@ -14,6 +14,9 @@ function cross(bar) {
   $('.nested-hidden-contents').css('display', 'hidden');
 }
 
+function slideNavigation() {
+}
+
 $(document).ready(function () {
   let modal = document.getElementById('modal-container');
 

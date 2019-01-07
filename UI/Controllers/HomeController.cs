@@ -25,5 +25,12 @@ namespace UI.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public IActionResult Gallery()
+        {
+            return View();
+        }
+
     }
 }

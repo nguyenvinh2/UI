@@ -13,3 +13,5 @@ This is an ongoing list of UI components for front-end design.
 3. Expanding Hamburger Menu
 
 ![Navigation](assets/expandingmenu.PNG)
+
+4. Gallery Navigation
