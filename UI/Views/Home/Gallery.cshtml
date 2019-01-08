@@ -16,16 +16,26 @@
 <h2>Gallery</h2>
 
 <section class="profile-container">
-  <div class="slideshow-container">
+  @for (int i = 0; i < names.Length; i++)
+  {
+    <div class="slideshow-container">
+      <div class="numbertext">@(i + 1) / @names.Length</div>
+      <img class="slide-img" src="@images[i]" style="width:100%; height: 100%;">
+    </div>
+  }
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+  <div class="row">
     @for (int i = 0; i < names.Length; i++)
     {
-      <div class="inventory-slide">
-        <img src="@images[i]">
-
-        <div class="inventory-label">
-          <h3>@names[i]</h3>
-        </div>
+      <div class="column">
+        <img class="slide-img preview cursor" src="@images[i]" style="width:100%; height:100%" onclick="currentSlide(@(i+1))" alt="@names[i]">
       </div>
     }
-  </div>
+    </div>
 </section>

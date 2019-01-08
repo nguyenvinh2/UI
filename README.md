@@ -15,3 +15,5 @@ This is an ongoing list of UI components for front-end design.
 ![Navigation](assets/expandingmenu.PNG)
 
 4. Gallery Navigation
+
+![Navigation](assets/gallery.PNG)
