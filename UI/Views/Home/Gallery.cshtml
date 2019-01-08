@@ -1,0 +1,41 @@
+﻿@{
+  ViewData["Title"] = "Gallery";
+  string[] images = new string[]
+  {"https://upload.wikimedia.org/wikipedia/commons/3/3e/USS_Louisiana_%28SSBN-743%29.jpg",
+"https://upload.wikimedia.org/wikipedia/commons/4/43/Defense.gov_News_Photo_960703-N-00000-001.jpg",
+"https://upload.wikimedia.org/wikipedia/commons/b/bb/US_Navy_040730-N-1234E-002_PCU_Virginia_%28SSN_774%29_returns_to_the_General_Dynamics_Electric_Boat_shipyard.jpg",
+"https://upload.wikimedia.org/wikipedia/commons/b/b4/USS_Asheville_%28SSN-758%292.jpg",
+"https://upload.wikimedia.org/wikipedia/commons/1/19/130920-N-NX070-025_-_USS_Arleigh_Burke_%28DDG-51%29.jpg",
+"https://upload.wikimedia.org/wikipedia/commons/0/07/US_Navy_100304-N-6006S-046_The_Ticonderoga-class_guided-missile_cruiser_USS_Bunker_Hill_%28CG_52%29_transits_in_the_Atlantic_Ocean.jpg",
+  };
+  string[] names = new string[] { "Ohio Class Submarine", "Seawolf Class Submarine", "Virginia Class Submarine", "Los Angeles Class Submarine", "Arleigh Burke Class Destroyer", "Ticonderoga Class Cruiser" };
+}
+
+@await Html.PartialAsync("Navigation")
+
+<h2>Gallery</h2>
+
+<section class="profile-container">
+  @for (int i = 0; i < names.Length; i++)
+  {
+    <div class="slideshow-container">
+      <div class="numbertext">@(i + 1) / @names.Length</div>
+      <img class="slide-img" src="@images[i]" style="width:100%; height: 100%;">
+    </div>
+  }
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+  <div class="row">
+    @for (int i = 0; i < names.Length; i++)
+    {
+      <div class="column">
+        <img class="slide-img preview cursor" src="@images[i]" style="width:100%; height:100%" onclick="currentSlide(@(i+1))" alt="@names[i]">
+      </div>
+    }
+    </div>
+</section>
